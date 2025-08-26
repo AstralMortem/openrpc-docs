@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/openrpc-docs.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        window.process = {env: {}}
+        window.OpenRPCSpec = "https://raw.githubusercontent.com/open-rpc/examples/refs/heads/master/service-descriptions/petstore-expanded-openrpc.json"
+    </script>
+    
+    
+</head>
+<body>
+    <div id="app"/>
+    <script src="./dist/openrpc-docs.umd.js"></script>
+</body>
+</html>

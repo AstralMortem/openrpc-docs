@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'OpenRPCDocs',
-      fileName: 'openrpc-docs',
+      fileName: (format) => `openrpc-docs.${format}.js`,
       formats: ['es', 'umd']
     },
     rollupOptions: {
